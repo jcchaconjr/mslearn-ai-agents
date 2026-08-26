@@ -57,6 +57,18 @@ Some notes to successfully complete this exercise:
 - When prompted to run the Agent.py script, the script will begin to build the agent, but will not complete in the lab environment (if using one) due to a "Rate Limit Exceeded error". THis shouldn't happen in your own environment, but know that limitations on your account could exist that could also cause this error.
 - Regardless of the error above, when instrcuted to run the Client.py script, it should run as expected.
 
+## Lab 9
+
+**Lab 9** from the Skillables Lab series for **AI-103** certification focuses on Exercise 3 in this repository. The instructions for building the Foundry resources via the Microsoft Foundry Extension, along with the code added to the sample app can be found in:
+.\Instructions\Exercises\04-integrate-agent-with-foundry-iq
+
+Some notes to successfully complete this exercise:
+
+- As mentioned previoulsy, if you have a global Python installation, building the Labenv as suggested in the instructions might generate warnings and leave the environemnt in a state where it can't properly load the packages. Just as in the last exercise, it's better to build a .venv environment to isolate execution.
+- To work around this issue, enter "Python: Create Environment" from the command prompt entry at the top (CTRL+SHIFT+P), selected venv, Python 3.13, then installed the package list for the requirements.txt file that is in the Labfiles folder for exercise 4.
+- For the .env file, you only need to provide the Project endpoint. the AGENT_NAME value is already prefilled.
+- This is one of the most confusing labs to complete, because the UI has changed a lot since the instructions were crfeated for it. The best advice I can offer is to read carefully and look for artifacts that closely resemble what the instructions are asking for.
+- There is a section that asks you to test the product-expert-agent from within the Foundry Toolkit. In my case, the model associated with the agent would not load in the Agent Builder, but this did not affect my ability to run the agent with teh Python script.
 
 ## Cleanup
 
